@@ -11,9 +11,7 @@ model = joblib.load("xgb_model.pkl")
 
 # Streamlit UI
 st.title("🚗 CO₂ Emission Prediction App")
-st.html(
-    '<p class="custom-markdown">This project predicts CO₂ emissions using machine learning models based on car engine features.</p>'
-)
+
 st.sidebar.header("Input Features")
 vehicle_class = st.sidebar.selectbox('Vehicle Class',
     ['COMPACT', 'SUV - SMALL', 'MID-SIZE', 'TWO-SEATER', 'MINICOMPACT',
